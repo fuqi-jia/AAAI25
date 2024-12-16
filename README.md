@@ -4,7 +4,7 @@ Code, dataset, and appendix for the AAAI25 paper: A Complete Algorithm for Optim
 
 ## Instructions of Reproducibility
 
-We also provide the source code and dataset in the ``Supplementary`` directory. The license is the same as the original CVC5 because it is a derived tool on CVC5. You should add a tag:  ``(set-logic OMT\_QF\_NRA)'' to enable the optimization mode. (Because CVC5 does not have an OMT parser at 1.0.8). One can generate benchmarks and build solvers using the command:
+We also provide the source code and dataset in the ``Supplementary`` directory. The license is the same as the original CVC5 because it is a derived tool on CVC5. You should add a tag:  ``(set-logic OMT\_QF\_NRA)'' to enable the optimization mode. (Because CVC5 does not have an OMT parser at version 1.0.8). One can generate benchmarks and build solvers using the command:
 ```
     ./prepare.sh
 ```
