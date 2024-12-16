@@ -8,7 +8,7 @@ We also provide the source code and dataset in the ``Supplementary`` directory. 
 ```
     ./prepare.sh
 ```
-One can run our solver parallel using the command:
+One can run our solver parallelly using the command:
 ```
     ./parallel_our_solver.sh cdcl_ocac
 ```
