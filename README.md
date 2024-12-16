@@ -1,4 +1,4 @@
-# Supplementary: A Complete Algorithm for Optimization Modulo Nonlinear Real Arithmetic
+# Supplementary of AAAI25 paper
 Code, dataset, and appendix for the AAAI25 paper: A Complete Algorithm for Optimization Modulo Nonlinear Real Arithmetic.
 
 
