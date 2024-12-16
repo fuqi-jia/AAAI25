@@ -1,5 +1,5 @@
-# AAAI25-CDCL-OCAC
-Code, dataset, and appendix for the AAAI25 paper
+# Supplementary: A Complete Algorithm for Optimization Modulo Nonlinear Real Arithmetic
+Code, dataset, and appendix for the AAAI25 paper: A Complete Algorithm for Optimization Modulo Nonlinear Real Arithmetic.
 
 
 ## Instructions of Reproducibility
