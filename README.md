@@ -16,3 +16,5 @@ One can run other solvers **s** (e.g. Z3, OptiMathSAT, ...) using the command:
 ```
     ./parallel_other_solver.sh s
 ```
+
+
