@@ -25,20 +25,6 @@ cd ../../
 
 if [ $# -eq 1 ];
 then
-    # advanced mode
-    cp -r SAT_RAND_10000_s50 QSAT_RAND_10000_s50
-    function generateQFile() {
-        for file in $@ -r;do 
-            if test -f $file;then 
-                python qtransformer.py $file|| { echo "command failed"; }
-            fi
-            if test -d $file;then
-                generateQFile $file/*
-            fi
-        done
-    }
-    generateQFile QSAT_RAND_10000_s50
-
     # build other solvers
     # z3
     echo "build z3..."
