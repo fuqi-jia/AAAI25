@@ -16,11 +16,12 @@ python add_tag.py CVC5_SAT_RAND_10000_s50
 echo "build cdcl_ocac..."
 cd cdcl_ocac/
 mkdir 1200
+rm -rf build/
 pip install toml
 pip install pyparsing
 ./configure.sh --auto-download --poly --cocoa
 cd build/
-make -j120
+make -j12
 cd ../../
 
 if [ $# -eq 1 ];
