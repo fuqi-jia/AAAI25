@@ -18,3 +18,5 @@ One can run other solvers **s** (e.g. Z3, OptiMathSAT, ...) using the command:
 ```
 
 
+#### NOTE
+A compile issue has occurred, maybe related to ``https://github.com/cvc5/cvc5/issues/11542``. We will fix it soon.
