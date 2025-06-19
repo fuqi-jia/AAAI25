@@ -1,22 +1,40 @@
-# Supplementary of AAAI25 paper
-Code, dataset, and appendix for the AAAI25 paper: A Complete Algorithm for Optimization Modulo Nonlinear Real Arithmetic.
+# Supplementary Materials for AAAI-25 Paper
 
+**A Complete Algorithm for Optimization Modulo Nonlinear Real Arithmetic**
 
-## Instructions of Reproducibility
+## Code Repository
 
-We also provide the source code and dataset in the ``Supplementary`` directory. The license is the same as the original CVC5 because it is a derived tool on CVC5. You should add a tag:  ``(set-logic OMT\_QF\_NRA)'' to enable the optimization mode. (Because CVC5 does not have an OMT parser at version 1.0.8). One can generate benchmarks and build solvers using the command:
-```
-    ./prepare.sh
-```
-One can run our solver parallelly using the command:
-```
-    ./parallel_our_solver.sh cdcl_ocac
-```
-One can run other solvers **s** (e.g. Z3, OptiMathSAT, ...) using the command:
-```
-    ./parallel_other_solver.sh s
+The source code is publicly available at:
+🔗 [https://github.com/fuqi-jia/cdcl\_ocac](https://github.com/fuqi-jia/cdcl_ocac)
+
+## Reproducibility Instructions
+
+We provide the complete source code, dataset, and appendix in the `Supplementary` directory. The project is based on CVC5 and inherits its license, as it is a derived work.
+
+> **Note:** To enable optimization mode, you must add the SMT-LIB tag:
+> `(set-logic OMT_QF_NRA)`
+> This is necessary because CVC5 (version 1.0.8) does not support OMT parsing by default.
+
+### Setup
+
+To prepare the environment, generate benchmarks, and build the solvers, run:
+
+```bash
+./prepare.sh
 ```
 
+### Running the Solvers
 
-#### NOTE
-Some compile issues have occurred, maybe related to ``https://github.com/cvc5/cvc5/issues/11542``. We will fix it soon.
+* To run **our solver** in parallel:
+
+```bash
+./parallel_our_solver.sh cdcl_ocac
+```
+
+* To run **other solvers** (e.g., Z3, OptiMathSAT, etc.) in parallel:
+
+```bash
+./parallel_other_solver.sh <solver_name>
+```
+
+Replace `<solver_name>` with the name of the desired solver.
