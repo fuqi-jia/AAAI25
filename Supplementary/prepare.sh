@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # basic mode
-echo "unzip..."
-unzip cdcl_ocac.zip
+echo "prepare code..."
+git clone https://github.com/fuqi-jia/cdcl_ocac.git
 unzip benchmarks.zip
 
 echo "split..."
